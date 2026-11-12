@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="/plantillas/plantillaBase.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="titulo">
+        Catálogo de Perfumes
+    </ui:define>
+
+   <ui:define name="contenido">
+    <h3>Lista de productos disponibles</h3>
+    <p>Bienvenido al catálogo de la perfumería.</p>
+    
+    <f:view>
+    <h:form>
+        <p:menu>
+            <p:menuitem value="Catálogo" url="index.xhtml" icon="pi pi-home" />
+<p:menuitem value="Carrito de Compras" url="vistas/Carrito.xhtml" icon="pi pi-shopping-cart" />
+        </p:menu>
+    </h:form>
+</f:view>
+</ui:define>
+
+</ui:composition>
